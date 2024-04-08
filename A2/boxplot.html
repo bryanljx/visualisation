@@ -1,0 +1,30 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>GDP per country in 2020</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+        <script src="boxplot.js" defer></script>
+    </head>
+    <style>
+        svg {
+            display: block;
+            margin: auto;
+        }
+
+        .tooltip {
+            position: absolute;
+            pointer-events: none;
+            background: #393838;
+            color: #fff;
+            padding: 4px 4px;
+        }
+    </style>
+    <body>
+        <h1 style="text-align:center">Regional Distribution of GDP (in millions) in 2020</h1>
+        <div id="chart"></div>
+    </body>
+</html>
