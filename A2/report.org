@@ -12,8 +12,6 @@ The initial dataset consists of the GDP for each country from 1960s all the way 
 | Country | Name of country                              | String                    |
 | State   | The region/continent the country belongs to  | String                    |
 | GDP     | The total amount of GDP for that year        | Integer                   |
-
-This dataset is interesting in that it allows us to analyse the popularity and trends in the anime industry across many different years and seasons.
 ** Data origin
 https://www.kaggle.com/datasets/holoong9291/gdp-of-all-countries19602020
 ** Github Repository
