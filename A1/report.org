@@ -1,0 +1,55 @@
+#+title: Task A1
+#+SETUPFILE: ~/org/report-latex.setup
+#+AUTHOR: Bryan Lim Jing Xiang (A0233605M)
+* Dataset
+** Overview
+This dataset consists of a list of animes scrapped from anime recommendation systems such as Anime Planet. The data that is of interest includes the following:
+
+| Field          | Description                                     | Data Type                               |
+|----------------+-------------------------------------------------+-----------------------------------------|
+| Rank           | Rank of the anime based on rating               | Integer (Starting from 1)               |
+| Name           | Anime Name                                      | String                                  |
+| Studio         | The studio that produced the anime              | String                                  |
+| Release Season | Season in which the anime was released          | ['Spring', 'Summer', 'Autumn', 'Winer'] |
+| Release Year   | Year in which the anime was released            | Year as integer                         |
+| Tags           | List of all the genres/tags the anime belong to | Space-delimited string                  |
+| Ratings        | Rating of the anime                             | Integer - Rating is out of 5            |
+|                |                                                 |                                         |
+
+This dataset is interesting in that it allows us to analyse the popularity and trends in the anime industry across many different years and seasons.
+** Data origin
+https://www.kaggle.com/datasets/vishalmane10/anime-dataset-2022
+** Github Repository
+https://github.com/bryanljx/visualisation
+* Purpose of Visualisation
+For this dataset, the query of interest is: "What are the trends amongst popular animes across the years? As a follow up, what constitutes the success or popularity of an anime?"
+
+Such a query is naturally of interest to stakeholders such as:
+- Anime Watchers
+  + Get recommendations on what types of animes to watch from the trending genres as well as anime studios that produce the best animes
+- Potential Investors
+  + Learn about genres that are popular as well as which studios have always been producing the best animes
+
+* Visualisation
+** Breakdown of genres of top 100 animes of all time
+
+[[./charts/anime_genre_across_time.png]]
+
+- A horizontal bar chart was chosen here to show the number of top 100 animes of all time that falls into the various genres.
+  + Note: The image was cut off slightly when saving to pdf/screenshot, please load and view the actual webpage instead.
+- Visual encoding here includes:
+  + Length - Denoting the number of animes that belong to that genre
+** Breakdown of anime studios behind top 100 animes of all time
+
+A[[./charts/anime_studios.png]]
+
+- A pie chart was chosen to show the distribution/percentages of the anime studios that have produced the most number of top 100 animes of all time.
+- Visual encoding here includes:
+  + Length - Denoting the number of such animes produced
+  + Color - Differentiating the anime studios
+** Number of anime per genre (for the top 10 genres all time) across the year 2000 - 2022
+[[./charts/anime_per_genre.png]]
+- A line chart was chosen here to display and compare the patterns in the number of animes produced across the years for the top 10 best performing genres of all time.
+- Visual encoding here includes:
+  + Position - Denoting the magnitude/count of animes per genre
+  + Color - Differentiating the different genre
