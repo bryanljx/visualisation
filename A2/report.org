@@ -1,0 +1,51 @@
+#+title: Task A2
+#+SETUPFILE: ~/org/report-latex.setup
+#+AUTHOR: Bryan Lim Jing Xiang (A0233605M)
+* Dataset
+** Overview
+The initial dataset consists of the GDP for each country from 1960s all the way to 2020. Here, I chose to focus instead on the GDP for each country in the year 2020 and show the distribution of GDP across countries instead. The data of interest is the following:
+
+| Field   | Description                                  | Data Type                 |
+|---------+----------------------------------------------+---------------------------|
+| Year    | Financial Year                               | Integer                   |
+| Rank    | Rank of the country based on their total GDP | Integer (starting from 0) |
+| Country | Name of country                              | String                    |
+| State   | The region/continent the country belongs to  | String                    |
+| GDP     | The total amount of GDP for that year        | Integer                   |
+
+This dataset is interesting in that it allows us to analyse the popularity and trends in the anime industry across many different years and seasons.
+** Data origin
+https://www.kaggle.com/datasets/holoong9291/gdp-of-all-countries19602020
+** Github Repository
+https://github.com/bryanljx/visualisation
+* Purpose of Visualisation
+For this dataset, the query of interest is: "What is the distribution of GDP like across the countries? Which countries are the biggest/smallest financially in terms of total GDP?"
+
+* Visualisation
+** GDP per country (in millions) in 2020
+
+[[./charts/gdp_per_country.png]]
+
+- A horizontal bar chart was chosen here to show the GDP per country
+  + Note: The image was cut off slightly when saving to pdf/screenshot, please load and view the actual webpage instead.
+- Visual encoding here includes:
+  + Length - Denoting the total amount of GDP for that country in year 2020
+** Global Distribution of GDP
+
+[[./charts/gdp_sunburst.png]]
+
+- A sunburst chart was chosen to show both the distribution/percentages of GDP across the countries as well as across regions.
+  + Note: The image was cut off slightly when saving to pdf/screenshot, please load and view the actual webpage instead.
+- Visual encoding here includes:
+  + Length - Denoting the percentage of total GDP globally that the country makes up
+  + Color - Differentiating the regions
+- Insights
+  + From the chart, it is evident how United States and China alone makes up for approximately a third of the world's GDP.
+** Regional Distribution of GDP (in millions) in 2020
+[[./charts/gdp_boxplot.png]]
+- A boxplot was chosen here to show the distribution/stats of GDP spread across various regions.
+- Visual encoding here includes:
+  + Position - Denoting the amount of GDP
+- Insights
+  + Of particular interest is that outliers aside, the region "America" does not actually do very well in spite of United States ranking first in terms of total GDP.
+  + It is also quite fascinating to see that Europe fared the best when looking at median and the interquartile range.
