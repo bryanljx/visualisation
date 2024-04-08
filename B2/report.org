@@ -1,0 +1,58 @@
+#+title: Task B2
+#+SETUPFILE: ~/org/report-latex.setup
+#+AUTHOR: Bryan Lim Jing Xiang (A0233605M)
+* Dataset
+** Overview
+This dataset is produced by processing and combining the dataset of monthly COE bids and monthly COE revalidation for cars in Singapore in recent years. The data fields of interest here are:
+
+| Field                   | Description                          | Data Type |
+|-------------------------+--------------------------------------+-----------|
+| Month                   | Month and Year of the data point     | String    |
+| bids_received           | Number of COE bids that month        | Integer   |
+| quota                   | COE quota that month                 | Integer   |
+| bids_success            | Number of successful bids that month | Integer   |
+| Total Revalidation      | Number of COE Revalidation           | Integer   |
+| Category A Revalidation | Revalidation for Cat A               | Integer   |
+| Category B Revalidation | Revalidation for Cat B               | Integer   |
+| Premium                 | COE premium that month               | Integer   |
+
+** Data origin
+https://datamall.lta.gov.sg/content/datamall/en/static-data.html
+** Github Repository
+https://github.com/bryanljx/visualisation
+* Purpose of Visualisation
+For this dataset, the query of interest is: "Given the increasing price of COE in recent years, what are some patterns in the number of bids and revalidation for COE?"
+* Visualisation
+** Trend of COE premium from 2015 - 2023
+
+[[./charts/coe_premium.png]]
+
+- Visual encoding here includes:
+  + Position - Denoting the price of COE premium
+- Insights
+  + Steep increase in premium since 2019
+** Correlation between COE quota, bids, and premium
+
+[[./charts/quota-bids-premium.png]]
+
+- A bubble chart was chosen to show the relationship between quota, bids and premium.
+- Visual encoding here includes:
+  + Position - Denoting both the number of COE quota and bids that month
+  + Size - Denoting the amount of COE premium that month
+  + Color - Differentiating the month (and making overlapping points clearer)
+- Insights
+  + Positive correlation between COE quota and bids
+  + Additionally, not enough evidence to suggest that high COE premiums leads to lower bids and quota but there seems to be such a trend.
+** Correlation between revalidation, bids, and premium
+
+[[./charts/reval-bids-premium.png]]
+
+- An bubble chart was chosen to emphasise the correlation between the three variables.
+- Visual encoding here includes:
+  + Position - Denoting the number of COE revalidations and bids that month
+  + Size - Denoting the amount of COE premium that month
+  + Color - Differentiating the month (and making overlapping points clearer)
+- Insights
+  + Clear correlation between the three variables
+  + High COE premiums lead to both lower revalidation and bids
+  + And revalidation and bids positively correlated to each other
