@@ -1,4 +1,4 @@
-#+title: Task B1
+#+title: Task D
 #+SETUPFILE: ~/org/report-latex.setup
 #+AUTHOR: Bryan Lim Jing Xiang (A0233605M)
 * Dataset
@@ -18,6 +18,8 @@ https://docs.google.com/spreadsheets/d/1a2uZKydzbP-vTdrXrdcGmfxTFnZSXdDS65XOpjWY
 https://github.com/bryanljx/visualisation
 * Purpose of Visualisation
 For this dataset, the query of interest is: "How fast is Singapore's population ageing? Is ageing population really a huge issue?"
+
+Here, we are trying to confirm and raise awareness into how severe the situation is for Singapore's ageing population.
 * Visualisation
 ** Comparison of Population Pyramid across 2000, 2010, and 2020
 
@@ -38,13 +40,13 @@ For this dataset, the query of interest is: "How fast is Singapore's population 
 - Visual encoding here includes:
   + Position - Denoting the ratio
 - Insights
-  + From the chart, it is evident how this is decreasing over time at a very steady pace
+  + From the chart, it is evident how this is decreasing over time at a very steady pace, which does confirms forecasts that by 2030 this ratio will drop below 4, and eventually as time goes on below 2.
 ** Percentage of elderly amongst the population across time
 
-[[./charts/% elderly.png]]
+[[./charts/elderly.png]]
 
 - An area chart was chosen to emphasise the increasing percentage across time.
 - Visual encoding here includes:
   + Position - Denoting the percentage of elderly amongst the population
 - Insights
-  + The rate of increase seems to be picking up in recent years which is concerning
+  + The rate of increase is starting to increase even more rapidly in recent years, which is a worrying sign
