@@ -12,7 +12,6 @@ This dataset consists of the population breakdown of Singapore from 2000 to 2020
 | Age Group | Age group                                             | String    |
 | Value     | Number of residents belonging to the particular group | Integer   |
 
-This dataset is interesting in that it allows us to analyse the popularity and trends in the anime industry across many different years and seasons.
 ** Data origin
 https://docs.google.com/spreadsheets/d/1a2uZKydzbP-vTdrXrdcGmfxTFnZSXdDS65XOpjWY0SE/edit#gid=1367742117
 ** Github Repository
