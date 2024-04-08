@@ -1,0 +1,51 @@
+#+title: Task B1
+#+SETUPFILE: ~/org/report-latex.setup
+#+AUTHOR: Bryan Lim Jing Xiang (A0233605M)
+* Dataset
+** Overview
+This dataset consists of the population breakdown of Singapore from 2000 to 2020. The data fields that are of interest here are:
+
+| Field     | Description                                           | Data Type |
+|-----------+-------------------------------------------------------+-----------|
+| Year      | Year                                                  | Integer   |
+| Group     | Denoting the residents that are included in the group | String    |
+| Age Group | Age group                                             | String    |
+| Value     | Number of residents belonging to the particular group | Integer   |
+
+This dataset is interesting in that it allows us to analyse the popularity and trends in the anime industry across many different years and seasons.
+** Data origin
+https://docs.google.com/spreadsheets/d/1a2uZKydzbP-vTdrXrdcGmfxTFnZSXdDS65XOpjWY0SE/edit#gid=1367742117
+** Github Repository
+https://github.com/bryanljx/visualisation
+* Purpose of Visualisation
+For this dataset, the query of interest is: "How fast is Singapore's population ageing? Is ageing population really a huge issue?"
+* Visualisation
+** Comparison of Population Pyramid across 2000, 2010, and 2020
+
+[[./charts/Pyramid.png]]
+
+- Visual encoding here includes:
+  + Length - Denoting the amount of residents (male/female) for each age group
+  + Color - Differentiating the year - 2000/2010/2020
+  + Position - Denoting the age group
+- Insights
+  + Clearly, the number of elderly are increasing rather substantially across the decades whereas the converse is not true for young adults
+** Old Age Support Ratio
+
+[[./charts/old age support ratio.png]]
+
+- As the name implies, old age support ratio is the ratio of working adults to elderly
+- An area chart was chosen to emphasise the decreasing pattern across time.
+- Visual encoding here includes:
+  + Position - Denoting the ratio
+- Insights
+  + From the chart, it is evident how this is decreasing over time at a very steady pace
+** Percentage of elderly amongst the population across time
+
+[[./charts/% elderly.png]]
+
+- An area chart was chosen to emphasise the increasing percentage across time.
+- Visual encoding here includes:
+  + Position - Denoting the percentage of elderly amongst the population
+- Insights
+  + The rate of increase seems to be picking up in recent years which is concerning
